@@ -1,6 +1,6 @@
-# www.mcplay.biz-theme
+# MCPlayNetwork-theme
 
-www.mcplay.biz-theme is a theme for [www.mcplay.biz](https://www.mcplay.biz)
+MCPlayNetwork-theme is a theme for [www.mcplay.biz](https://www.mcplay.biz)
 
 ## Contributing
 
