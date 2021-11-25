@@ -1,89 +1,23 @@
-# Dawn
+# www.mcplay.biz-theme
 
-A highly functional theme that adapts to the reader's preferences. Let them read, search, subscribe, navigate, and more with ease. Completely free and fully responsive, released under the MIT license.
+www.mcplay.biz-theme is a theme for [www.mcplay.biz](https://www.mcplay.biz)
 
-**Demo: https://dawn.ghost.io**
+## Contributing
 
-&nbsp;
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-# Instructions
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
-1. [Download this theme](https://github.com/TryGhost/Dawn/archive/main.zip)
-2. Log into Ghost, and go to the `Design` settings area to upload the zip file
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-# Search
+## Upstream
 
-1. Navigate to the `Integrations` and click on `Add custom integration`. 
-2. Copy the content API key; this will be used to fetch posts from your site.
-3. Insert the generated key in `Code injection > Site Header` field.
+This project has [tryGhost/Dawn](https://github.com/TryGhost/Dawn) as an upstream. Many thanks to all the contributors of tryGhost and Dawn.
 
-```html
-<script>
-    var gh_search_key = 'API_KEY';
-    var gh_search_migration = 'v1';
-</script>
-```
+## License
 
-The theme generates an index of posts for highly performant search. The index is updated automatically when posts are added or updated. However, it isn't updated when posts are unpublished or deleted.
-
-To force update the index, increment the search index migration version like `'v2'`.
-
-## Disable Content Search
-
-When your site has lots of posts, including the post content in the index cache ends up with exceeding the browser local storage quota. In that case, disabling content search is recommended. Also make sure increase the migration version to force update the old index.
-
-```html
-<script>
-    var gh_search_key = 'API_KEY';
-    var gh_search_migration = 'v2'; // Increased from v1
-    var gh_search_content = false; // Disables content search
-</script>
-```
-
-# White Logo
-
-If your logo image isn't recognizable in dark mode, you can set a white version of the logo in `Code injection > Site Header` field.
-
-```html
-<script>
-    var gh_white_logo = 'https://example.com/content/images/white-logo.png';
-</script>
-```
-
-# Dropdown Menu
-
-The theme looks for a menu item with three dots (`...`) in its URL, and uses that as a dropdown menu toggle. All menu items after the toggle will be added to the dropdown list automatically.
-
-| Label      | URL                       |
-|------------|---------------------------|
-| More links | https://example.com/...   |
-| Sub-1      | https://example.com/sub-1 |
-| Sub-2      | https://example.com/sub-2 |
-
-# Development
-
-Styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
-
-```bash
-# Install
-yarn
-
-# Run build & watch for changes
-$ yarn dev
-```
-
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
-
-The `zip` Gulp task packages the theme files into `dist/<theme-name>.zip`, which you can then upload to your site.
-
-```bash
-yarn zip
-```
-
-# PostCSS Features Used
-
-- Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
-
-# Copyright & License
-
-Copyright (c) 2013-2021 Ghost Foundation - Released under the [MIT license](LICENSE).
+Distributed under the [MIT license](LICENSE). See LICENSE for more information.
