@@ -39,6 +39,7 @@
                 "width": 1920
             }
         },
+        "card_assets": true,
         "custom": {
             "title_font": {
                 "type": "select",
@@ -90,8 +91,8 @@
     "devDependencies": {
         "autoprefixer": "10.4.0",
         "beeper": "2.1.0",
-        "cssnano": "5.0.11",
-        "gscan": "4.13.0",
+        "cssnano": "5.0.12",
+        "gscan": "4.17.0",
         "gulp": "4.0.2",
         "gulp-concat": "2.6.1",
         "gulp-livereload": "4.0.2",
@@ -99,7 +100,7 @@
         "gulp-stylelint": "13.0.0",
         "gulp-uglify": "3.0.2",
         "gulp-zip": "5.1.0",
-        "postcss": "8.4.1",
+        "postcss": "8.4.5",
         "postcss-easy-import": "3.0.0",
         "pump": "3.0.0",
         "stylelint": "14.1.0",
